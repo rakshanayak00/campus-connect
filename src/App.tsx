@@ -123,7 +123,7 @@ function App() {
     catch { return [] }
   })
   const [posts, setPosts] = useState(initialPostsTypeSafe())
-  const [clubs, setClubs] = useState(initialClubsTypeSafe())
+  const [clubs] = useState(initialClubsTypeSafe())
   const [joinedClubs, setJoinedClubs] = useState<number[]>(() => {
     try { return JSON.parse(localStorage.getItem('campus-connect-joined-clubs') || 'null') ?? [] }
     catch { return [] }
