@@ -1,75 +1,57 @@
-# React + TypeScript + Vite
+# 🎓 CampusConnect – Campus Community Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CampusConnect is a web-based campus community platform designed to bring students together in one place. It allows students to discover campus events, explore clubs, share updates, and interact with their college community.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Click Here to Explore CampusConnect](https://campus-connect-ten-weld.vercel.app)**
 
-## React Compiler
+Explore the application directly in your browser.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 Key Features
 
-## Expanding the ESLint configuration
+- **Dashboard:** Overview of campus activities and community updates.
+- **Events:** Discover, search, filter, register for, and save campus events.
+- **Community:** Create posts and interact with updates through likes.
+- **Clubs:** Explore campus clubs and join communities based on interests.
+- **Local Data Persistence:** Uses browser localStorage to retain application data.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- HTML
+- CSS
+- Lucide React
+- Browser localStorage
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Run Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**1. Clone the repository**
 
+```bash
+git clone https://github.com/rakshanayak00/campus-connect.git
+cd campus-connect
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+**2. Install dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
+
+**3. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## 👩‍💻 Author
+
+**Raksha Nayak**
+
+- GitHub: [rakshanayak00](https://github.com/rakshanayak00)
+- LinkedIn: [Raksha Nayak](https://www.linkedin.com/in/raksha-nayak-582856293)
